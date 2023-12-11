@@ -8,9 +8,14 @@ namespace MIPTTestProject
         {
             Calculator calculator = new Calculator();
 
-            Console.WriteLine("Делить на 0 нельзя");
-            int i = Convert.ToInt32(Console.ReadLine());
-            int j = Convert.ToInt32(Console.ReadLine());
+            string str = Console.ReadLine();
+            int i;
+            bool result = int.TryParse(str, out i);
+
+            string st = Console.ReadLine();
+            int j;
+            bool resultj = int.TryParse(st, out j);
+            
             int sum = calculator.Sum(i , j);
 
             Console.WriteLine("Our sum is");
