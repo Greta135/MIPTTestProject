@@ -8,7 +8,7 @@ namespace MIPTTestProject
         {
             Calculator calculator = new Calculator();
 
-            
+            Console.WriteLine("Делить на 0 нельзя");
             int i = Convert.ToInt32(Console.ReadLine());
             int j = Convert.ToInt32(Console.ReadLine());
             int sum = calculator.Sum(i , j);
