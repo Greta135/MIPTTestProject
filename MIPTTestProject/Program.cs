@@ -15,8 +15,7 @@ namespace MIPTTestProject
             string st = Console.ReadLine();
             int j;
             bool resultj = int.TryParse(st, out j);
-            if (j != 0) { Console.WriteLine("Запрещено делить на 0"); }
-            else { return; }
+            if (j == 0) { Console.WriteLine("Запрещено делить на 0"); return; }
             int sum = calculator.Sum(i , j);
 
             Console.WriteLine("Our sum is");
