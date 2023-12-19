@@ -14,7 +14,8 @@ namespace MIPTTestProject
             Customer customer = new Customer();
             Seller seller = new Seller();
 
-            
+            seller.SendOrder();
+            customer.DeleteOrder();
         }
     }
     class User
@@ -31,18 +32,18 @@ namespace MIPTTestProject
             }
         }
         public string Order;
-        public void DeleteOrder(int id)
-        {
-            Console.WriteLine("delete order by id");
-        }
-        public void CreateOrder(string newValue)
-        {
-            Console.WriteLine("create new order");
-        }
-        public void SendOrder(string newValue)
-        {
-            Console.WriteLine("SendOrder is Successed");
-        }
+public void DeleteOrder()
+{
+    Console.WriteLine("No Acess");
+}
+public void CreateOrder()
+{
+    Console.WriteLine("Create new order");
+}
+public void SendOrder()
+{
+    Console.WriteLine("SendOrder is Successed");
+}
         
     }
     class Customer : User
